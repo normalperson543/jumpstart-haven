@@ -1,15 +1,15 @@
 [gd_scene format=4 uid="uid://bhss2rc30pepk"]
 
 [ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_j2q8x"]
-[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_112p8"]
 [ext_resource type="PackedScene" uid="uid://clwk58u83rjox" path="res://coin_ui.tscn" id="3_e2u21"]
 [ext_resource type="PackedScene" uid="uid://dwod1c8k5hdse" path="res://coin.tscn" id="3_tda05"]
 [ext_resource type="Texture2D" uid="uid://cph7qygrkrteu" path="res://assets/Background/Background.png" id="4_e2u21"]
+[ext_resource type="Texture2D" uid="uid://w03wvmxgyfxs" path="res://haven logo.png" id="4_qn3nj"]
 [ext_resource type="Texture2D" uid="uid://ba2s7q8hrc0c0" path="res://assets/Assets/Tiles.png" id="5_bss38"]
 [ext_resource type="Script" uid="uid://mernhpwki5pt" path="res://kill_zone.gd" id="7_qn3nj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tvvud"]
-size = Vector2(128, 128)
+size = Vector2(121, 121)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tda05"]
 texture = ExtResource("5_bss38")
@@ -507,11 +507,12 @@ texture = ExtResource("4_e2u21")
 script = ExtResource("1_j2q8x")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1167803764]
-position = Vector2(116, 121)
-texture = ExtResource("2_112p8")
+position = Vector2(115.49999, 120.49999)
+scale = Vector2(0.23632811, 0.23632811)
+texture = ExtResource("4_qn3nj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1952829175]
-position = Vector2(116, 121)
+position = Vector2(115.5, 120.5)
 shape = SubResource("RectangleShape2D_tvvud")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1824920363]
